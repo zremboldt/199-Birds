@@ -23,9 +23,13 @@ const Header = ({ siteTitle }) => (
           style={{
             color: `white`,
             textDecoration: `none`,
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'center',
           }}
         >
           <img style={{ width: '100px', margin: 0 }} src={gatsbyLogo} alt="" />
+          <h1 style={{ margin: 0 }}>{siteTitle}</h1>
         </Link>
       </h1>
     </div>
