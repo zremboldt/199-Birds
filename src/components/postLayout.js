@@ -8,10 +8,11 @@ import Layout from './layout';
 // Page Query
 // Must be used on pages, does accept variables.
 
-const postLayout = () => {
+const postLayout = props => {
+  const { markdownRemark } = props.data;
   return (
     <Layout>
-      <h1>postLayout</h1>
+      <h1>{markdownRemark.frontmatter.title}</h1>
     </Layout>
   );
 };
@@ -24,8 +25,8 @@ export default postLayout;
 // For this to work though you have to use a named export and call it query here below.
 
 export const query = graphql`
-  query PostQuery {
-    markdownRemark(frontmatter: { path: { eq: "/third-post" } }) {
+  query PostQuery($slug: String!) {
+    markdownRemark(frontmatter: { path: { eq: $slug } }) {
       html
       frontmatter {
         title
