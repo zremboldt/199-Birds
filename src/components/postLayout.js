@@ -13,6 +13,7 @@ const postLayout = props => {
   return (
     <Layout>
       <h1>{markdownRemark.frontmatter.title}</h1>
+      <div dangerouslySetInnerHTML={{ __html: markdownRemark.html }} />
     </Layout>
   );
 };
