@@ -4,8 +4,6 @@ date: '2019-01-04'
 title: 'Our first post'
 ---
 
-# Hello
-
 Lorem ipsum dolor amet four dollar toast cold-pressed pickled iceland everyday carry small batch swag knausgaard tousled hell of. Cliche fingerstache knausgaard godard PBR&B hella umami whatever prism. Chia gluten-free neutra fam wolf, adaptogen migas try-hard. Single-origin coffee iceland wayfarers flexitarian, ugh etsy heirloom palo santo butcher gastropub franzen lumbersexual gochujang.
 
 Vinyl next level raw denim chambray iceland. Freegan iPhone hot chicken pour-over. Plaid unicorn truffaut hell of green juice tote bag irony flannel. Direct trade butcher church-key austin, bicycle rights slow-carb roof party put a bird on it listicle lumbersexual whatever photo booth bespoke you probably haven't heard of them neutra.

@@ -1,7 +1,7 @@
 ---
-path: '/second-post'
-date: '2019-01-05'
-title: 'Our second post'
+path: '/fifth-post'
+date: '2019-01-16'
+title: 'Our fifth post'
 ---
 
 Lorem ipsum dolor amet four dollar toast cold-pressed pickled iceland everyday carry small batch swag knausgaard tousled hell of. Cliche fingerstache knausgaard godard PBR&B hella umami whatever prism. Chia gluten-free neutra fam wolf, adaptogen migas try-hard. Single-origin coffee iceland wayfarers flexitarian, ugh etsy heirloom palo santo butcher gastropub franzen lumbersexual gochujang.
