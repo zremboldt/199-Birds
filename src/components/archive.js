@@ -1,5 +1,6 @@
 import React from 'react';
 import { graphql, StaticQuery, Link } from 'gatsby';
+import styled from '@emotion/styled';
 
 const POST_ARCHIVE_QUERY = graphql`
   query BlogPostArchive {
@@ -25,7 +26,7 @@ const Archive = () => (
     render={data => (
       <aside>
         <h3>Archive</h3>
-        <ul>
+        <ArchiveList>
           {data.allMarkdownRemark.edges.map(edge => (
             <li key={edge.node.frontmatter.path}>
               <Link to={`/posts${edge.node.frontmatter.path}`}>
@@ -33,10 +34,20 @@ const Archive = () => (
               </Link>
             </li>
           ))}
-        </ul>
+        </ArchiveList>
       </aside>
     )}
   />
 );
 
 export default Archive;
+
+const ArchiveList = styled.ul`
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: sans-serif;
+  a {
+    color: #222;
+  }
+`;

@@ -27,12 +27,12 @@ const Listing = () => (
     query={LISTING_QUERY}
     render={({ allMarkdownRemark }) =>
       allMarkdownRemark.edges.map(edge => (
-        <ArticlePreview key={edge.node.frontmatter.slug}>
+        <Post key={edge.node.frontmatter.slug}>
           <h2>{edge.node.frontmatter.title}</h2>
-          <p>{edge.node.frontmatter.date}</p>
+          <p class="date">{edge.node.frontmatter.date}</p>
           <p>{edge.node.excerpt}</p>
           <Link to={`/posts${edge.node.frontmatter.path}`}>Read More</Link>
-        </ArticlePreview>
+        </Post>
       ))
     }
   />
@@ -44,16 +44,25 @@ export default Listing;
 // Styles
 // --------
 
-const ArticlePreview = styled.article`
-  padding: 0 4rem 4rem 0;
+const Post = styled.article`
+  box-shadow: 0 3px 10px rgba(25, 17, 34, 0.15);
+  padding: 2rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
   h2 {
     margin-bottom: 6px;
+    font-size: 2.2rem;
   }
-  p:first-of-type {
+  .date {
     margin-bottom: 2rem;
-    color: #aaa;
+    color: #999;
   }
   p:last-of-type {
     margin-bottom: 1rem;
+  }
+  a {
+    color: #222;
+    font-family: sans-serif;
+    font-size: 0.9rem;
   }
 `;

@@ -43,4 +43,5 @@ const MainLayout = styled.main`
   margin: 0 auto;
   display: grid;
   grid-template-columns: 3fr 1fr;
+  grid-column-gap: 2rem;
 `;
