@@ -23,11 +23,11 @@ const Layout = ({ children }) => (
           <div>{children}</div>
           <Archive />
         </MainLayout>
-        <footer>
+        <Footer>
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+        </Footer>
       </>
     )}
   />
@@ -44,4 +44,9 @@ const MainLayout = styled.main`
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-column-gap: 2rem;
+`;
+
+const Footer = styled.footer`
+  max-width: 90%;
+  margin: 40px auto;
 `;

@@ -9,7 +9,7 @@ const Header = ({ siteTitle }) => (
     <HeaderWrap>
       <Link to="/">
         <img src={gatsbyLogo} alt="" />
-        <h1 style={{ margin: 0 }}>{siteTitle}</h1>
+        <h2 style={{ margin: 0 }}>{siteTitle}</h2>
       </Link>
     </HeaderWrap>
   </HeaderCtr>
@@ -32,20 +32,23 @@ Header.defaultProps = {
 // Styles
 // --------
 const HeaderCtr = styled.div`
-  background: #524763;
-  margin-bottom: 1.45rem;
+  background: hsla(0, 0%, 100%, 0.96);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   img {
-    width: 80px;
+    width: 40px;
     margin-bottom: 0;
   }
 `;
 
 const HeaderWrap = styled.div`
   max-width: 90%;
-  margin: 0 auto 6rem;
+  margin: 0 auto;
   padding: 1rem 0;
   a {
-    color: white;
+    color: rebeccapurple;
     text-decoration: none;
     display: flex;
     justify-content: space-between;

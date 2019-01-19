@@ -5,7 +5,7 @@ import styled from '@emotion/styled';
 const POST_ARCHIVE_QUERY = graphql`
   query BlogPostArchive {
     allMarkdownRemark(
-      limit: 5
+      limit: 10
       sort: { order: DESC, fields: [frontmatter___date] }
     ) {
       edges {

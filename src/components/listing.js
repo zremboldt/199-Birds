@@ -27,12 +27,16 @@ const Listing = () => (
     query={LISTING_QUERY}
     render={({ allMarkdownRemark }) =>
       allMarkdownRemark.edges.map(edge => (
-        <Post key={edge.node.frontmatter.slug}>
-          <h2>{edge.node.frontmatter.title}</h2>
-          <p class="date">{edge.node.frontmatter.date}</p>
-          <p>{edge.node.excerpt}</p>
-          <Link to={`/posts${edge.node.frontmatter.path}`}>Read More</Link>
-        </Post>
+        <Link
+          style={{ textDecoration: 'none', color: '#222' }}
+          to={`/posts${edge.node.frontmatter.path}`}
+        >
+          <Post key={edge.node.frontmatter.slug}>
+            <h2>{edge.node.frontmatter.title}</h2>
+            <p class="date">{edge.node.frontmatter.date}</p>
+            <p>{edge.node.excerpt}</p>
+          </Post>
+        </Link>
       ))
     }
   />
@@ -49,6 +53,7 @@ const Post = styled.article`
   padding: 2rem;
   border-radius: 4px;
   margin-bottom: 1rem;
+  background-color: white;
   h2 {
     margin-bottom: 6px;
     font-size: 2.2rem;
@@ -59,10 +64,5 @@ const Post = styled.article`
   }
   p:last-of-type {
     margin-bottom: 1rem;
-  }
-  a {
-    color: #222;
-    font-family: sans-serif;
-    font-size: 0.9rem;
   }
 `;
