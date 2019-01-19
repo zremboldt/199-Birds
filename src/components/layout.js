@@ -49,4 +49,7 @@ const MainLayout = styled.main`
 const Footer = styled.footer`
   max-width: 90%;
   margin: 40px auto;
+  a {
+    color: #f012be;
+  }
 `;

@@ -8,7 +8,7 @@ const Header = ({ siteTitle }) => (
   <HeaderCtr>
     <HeaderWrap>
       <Link to="/">
-        <img src={gatsbyLogo} alt="" />
+        {/* <img src={gatsbyLogo} alt="" /> */}
         <h2 style={{ margin: 0 }}>{siteTitle}</h2>
       </Link>
     </HeaderWrap>
@@ -48,7 +48,7 @@ const HeaderWrap = styled.div`
   margin: 0 auto;
   padding: 1rem 0;
   a {
-    color: rebeccapurple;
+    color: #f012be;
     text-decoration: none;
     display: flex;
     justify-content: space-between;

@@ -1,7 +1,7 @@
 ---
+title: 'JavaScript Questions'
 path: '/javascript-questions'
 date: '2019-01-19'
-title: 'JavaScript Questions'
 ---
 
 - Explain event delegation.

@@ -25,7 +25,7 @@ const Archive = () => (
     query={POST_ARCHIVE_QUERY}
     render={data => (
       <aside>
-        <h3>Archive</h3>
+        <h3 style={{ color: '#f012be' }}>Archive</h3>
         <ArchiveList>
           {data.allMarkdownRemark.edges.map(edge => (
             <li key={edge.node.frontmatter.path}>

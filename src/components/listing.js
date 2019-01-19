@@ -55,6 +55,7 @@ const Post = styled.article`
   margin-bottom: 1rem;
   background-color: white;
   h2 {
+    color: #f012be;
     margin-bottom: 6px;
     font-size: 2.2rem;
   }
