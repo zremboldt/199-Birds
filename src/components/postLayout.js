@@ -1,6 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from './layout';
+import styled from '@emotion/styled';
 
 // Static Query
 // Can be used anywhere but does not accept a variable.
@@ -13,7 +14,7 @@ const postLayout = props => {
   return (
     <Layout>
       <h1>{markdownRemark.frontmatter.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: markdownRemark.html }} />
+      <PostBody dangerouslySetInnerHTML={{ __html: markdownRemark.html }} />
     </Layout>
   );
 };
@@ -35,5 +36,23 @@ export const query = graphql`
         path
       }
     }
+  }
+`;
+
+const PostBody = styled.div`
+  ul {
+    list-style-type: none;
+    margin: 0;
+  }
+  li {
+    font-weight: bold;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  blockquote {
+    font-weight: 300;
+    color: #f012be;
   }
 `;
