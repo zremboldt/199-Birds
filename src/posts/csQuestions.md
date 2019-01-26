@@ -6,6 +6,12 @@ title: 'Computer Science'
 
 [Great place to study up!](https://www.interviewcake.com/article/javascript/logarithms?section=algorithmic-thinking&course=fc1)
 
+Any time you divide something by half by half by half what type of formula is that?
+Any time you keep dividing a number again and again and again...Could even be thirds or fourths (proportional amounts).
+It's a Logarithm
+
+logN just means you divided n (a number of things) things again and again and again.
+
 What is Big-O?
 
 The O in "Big O" refers to as "Order"(or precisely "order of")
@@ -25,7 +31,7 @@ There are seven most used notations
 4. O(NlogN), ends a task with O(NlogN) steps, it's not good, Order No.4
 5. O(N^2), get a task done with N^2 steps, it's bad, Order No.5
 6. O(2^N), get a task done with 2^N steps, it's horrible, Order No.6
-7. O(N!), get a task done with N! steps, it's terrible, Order No.7
+7. O(N!), get a task done with N! steps, it's beyond horrible, Order No.7
 
 ![alt text](https://i.stack.imgur.com/6zHEt.png)
 
@@ -38,7 +44,6 @@ Summary
 - Define the following and determine Big-O time for each:
 
   - Linked lists
-    > Answer here
   - Binary trees
   - Tries
   - Stacks
@@ -69,7 +74,7 @@ Summary
 
 ---
 
-Originally Answered: How can one prepare for a computer science job interview?
+How can one prepare for a computer science job interview?
 
 You must know a relatively small subset of algorithms and data structures. There are a few exceptions, which I list below under "Advanced preparation". The nice thing is that as you grow older, the core material won't change much, even if the problems become more difficult.
 
