@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import { StaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
 import Header from './header';
 import Archive from './archive';
 import './layout.css';
@@ -14,11 +15,19 @@ const Layout = ({ children }) => (
             title
           }
         }
+        file(relativePath: { regex: "/markus/" }) {
+          childImageSharp {
+            fluid(maxWidth: 1000) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     `}
     render={data => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} />
+        <Img fluid={data.file.childImageSharp.fluid} />
         <MainLayout>
           <div>{children}</div>
           <Archive />
@@ -40,7 +49,7 @@ export default Layout;
 // --------
 const MainLayout = styled.main`
   max-width: 90%;
-  margin: 0 auto;
+  margin: 60px auto 0;
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-column-gap: 2rem;

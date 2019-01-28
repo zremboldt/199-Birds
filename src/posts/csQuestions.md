@@ -136,3 +136,8 @@ so
 It's common in programming languages for a floating point number to require 32 bits to store it in memory.
 Roughly speaking, a floating point number is only accurate up to about 7 decimal places.
 To get more precise when programming in C, you must use something called double which would give you more precision but requires twice as much memory to store (64 bits).
+
+---
+
+A "Pointer" is just a buzz word for "address on memory".
+char \* is saying "I want a variable that doesn't store a char, it stores the address of the char." That address is just going to be called a pointer.

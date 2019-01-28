@@ -37,6 +37,7 @@ const HeaderCtr = styled.div`
   top: 0;
   left: 0;
   right: 0;
+  z-index: 99;
   img {
     width: 40px;
     margin-bottom: 0;
