@@ -28,12 +28,13 @@ const Listing = () => (
     render={({ allMarkdownRemark }) =>
       allMarkdownRemark.edges.map(edge => (
         <Link
+          key={edge.node.frontmatter.slug}
           style={{ textDecoration: 'none', color: '#222' }}
           to={`/posts${edge.node.frontmatter.path}`}
         >
-          <Post key={edge.node.frontmatter.slug}>
+          <Post>
             <h2>{edge.node.frontmatter.title}</h2>
-            <p class="date">{edge.node.frontmatter.date}</p>
+            <p className="date">{edge.node.frontmatter.date}</p>
             <p>{edge.node.excerpt}</p>
           </Post>
         </Link>

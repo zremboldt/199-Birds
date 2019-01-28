@@ -2,13 +2,11 @@ import { Link } from 'gatsby';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 import React from 'react';
-import gatsbyLogo from '../images/gatsby-icon.png';
 
 const Header = ({ siteTitle }) => (
   <HeaderCtr>
     <HeaderWrap>
       <Link to="/">
-        {/* <img src={gatsbyLogo} alt="" /> */}
         <h2 style={{ margin: 0 }}>{siteTitle}</h2>
       </Link>
     </HeaderWrap>
