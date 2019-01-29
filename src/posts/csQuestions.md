@@ -50,6 +50,8 @@ O(n)
 
     > In this clip David Malan questions the limitations of an array and goes into describing how a linked list works: https://youtu.be/ed2lnJNf7HU?list=PLhQjrBD2T382eX9-tF75Wa4lmlC7sxNDH&t=2180
 
+    > Here's a summary on the linked list. When & why to use it: https://youtu.be/ed2lnJNf7HU?list=PLhQjrBD2T382eX9-tF75Wa4lmlC7sxNDH&t=3506
+
   - Binary trees
   - Tries
   - Stacks
