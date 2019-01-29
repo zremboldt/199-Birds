@@ -39,11 +39,17 @@ Summary
 "Big O" describes the algorithm's performance and evaluates it.
 "Big O" classifies the algorithms and standardize the comparison process.
 
+O of n is a linear process
+O(n)
+
 ---
 
 - Define the following and determine Big-O time for each:
 
   - Linked lists
+
+    > In this clip David Malan questions the limitations of an array and goes into describing how a linked list works: https://youtu.be/ed2lnJNf7HU?list=PLhQjrBD2T382eX9-tF75Wa4lmlC7sxNDH&t=2180
+
   - Binary trees
   - Tries
   - Stacks
@@ -54,18 +60,27 @@ Summary
   - Breadth first search
   - Depth first search
   - Binary Search
+
     > O(log n) worst case time complexity. Works well so long as the list you're searching is ordered. Split the list in half and determine which half you need to keep and split again and again until you've found what you're searching for.
+
   - Merge sort
+
     > Ο(n log n) worst case time complexity. Merge sort is a sorting technique based on divide and conquer technique. Merge sort first divides the array into equal halves and then combines them in a sorted manner.
+
   - Quick sort
   - Tree insert/find/etc
   - Linear search
+
     > O(n) time complexity. Search through the phonebook one page at a time.
+
   - Bubble sort
+
     > O(n2) time complexity. Bubble sort, sometimes referred to as sinking sort, is a simple sorting algorithm that repeatedly steps through the list, compares adjacent pairs and swaps them if they are in the wrong order. Although the algorithm is simple, it is too slow and impractical for most problems.
+
   - Selection sort
+
     > O(n2) time complexity, making it inefficient on large lists, and generally performs worse than the similar insertion sort. The algorithm divides the input list into two parts: the sublist of items already sorted, which is built up from left to right at the front (left) of the list, and the sublist of items remaining to be sorted that occupy the rest of the list. Initially, the sorted sublist is empty and the unsorted sublist is the entire input list. The algorithm proceeds by finding the smallest (or largest, depending on sorting order) element in the unsorted sublist, exchanging (swapping) it with the leftmost unsorted element (putting it in sorted order), and moving the sublist boundaries one element to the right.
-  -
+
   - Recursion
 
 ---
