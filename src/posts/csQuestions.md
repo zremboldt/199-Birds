@@ -58,7 +58,9 @@ O(n)
   - Queues
   - Dynamic arrays
   - Hash tables/maps
-  -
+
+    > An example of a hash table could be an array with 26 slots, each representing a character in the English alphabet. Each slot contains a linked list (actually a memory reference to the first item in the linked list), and this linked list would contain all of the "A" names of students in a classroom or all of the "B" names, etc. This makes finding a name SO much more efficient than if all of the names were just in a standard array.
+
   - Breadth first search
   - Depth first search
   - Binary Search
