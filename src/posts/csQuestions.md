@@ -12,6 +12,9 @@ It's a Logarithm
 
 logN just means you divided n (a number of things) things again and again and again.
 
+Linear time: The length of time it takes to solve the problem corrolates directly to the size of the problem.
+Logarithmic time: divide and divide and divide the problem to solve.
+
 What is Big-O?
 
 The O in "Big O" refers to as "Order"(or precisely "order of")
@@ -53,7 +56,13 @@ O(n)
     > Here's a summary on the linked list. When & why to use it: https://youtu.be/ed2lnJNf7HU?list=PLhQjrBD2T382eX9-tF75Wa4lmlC7sxNDH&t=3506
 
   - Binary trees
+
+    > Great explanation of a binary tree here: https://youtu.be/ed2lnJNf7HU?list=PLhQjrBD2T382eX9-tF75Wa4lmlC7sxNDH&t=6687
+
   - Tries
+
+    > Great explanation of a trie (short for retrieval) here: https://youtu.be/ed2lnJNf7HU?list=PLhQjrBD2T382eX9-tF75Wa4lmlC7sxNDH&t=6887
+
   - Stacks
   - Queues
   - Dynamic arrays
@@ -156,7 +165,17 @@ It's common in programming languages for a floating point number to require 32 b
 Roughly speaking, a floating point number is only accurate up to about 7 decimal places.
 To get more precise when programming in C, you must use something called double which would give you more precision but requires twice as much memory to store (64 bits).
 
+With 8 bits you can count up to 256
+With 32 bits you can count up to roughly 4 billion
+
 ---
 
 A "Pointer" is just a buzz word for "address on memory".
 char \* is saying "I want a variable that doesn't store a char, it stores the address of the char." That address is just going to be called a pointer.
+
+---
+
+TCP/IP
+A pair of protocols. "Languages" that computers speak in order to transmit information from one computer to another. This is what makes most of the internet today work.
+
+IP stands for Internet Protocol so an IP address is an Internet Protocol Address.
