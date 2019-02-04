@@ -12,7 +12,7 @@ import styled from '@emotion/styled';
 const postLayout = props => {
   const { markdownRemark } = props.data;
   return (
-    <Layout>
+    <Layout location={props.location}>
       <h1>{markdownRemark.frontmatter.title}</h1>
       <PostBody dangerouslySetInnerHTML={{ __html: markdownRemark.html }} />
     </Layout>

@@ -1,8 +1,8 @@
 import React from 'react';
 import Layout from '../components/layout';
 
-const about = () => (
-  <Layout>
+const about = ({ location }) => (
+  <Layout location={location}>
     <h1>About</h1>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quam maiores
