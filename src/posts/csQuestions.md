@@ -41,9 +41,45 @@ There are seven most used notations
 Summary
 "Big O" describes the algorithm's performance and evaluates it.
 "Big O" classifies the algorithms and standardize the comparison process.
+"Big O" notation gives you a rough idea of how your function scales as the input to that function gets larger and larger.
 
+Excellent Resource:
+https://medium.freecodecamp.org/time-is-complex-but-priceless-f0abd015063c
+
+**O(1)**
+Time complexity: Constant time
+Given an input of size n, it only takes a single step for the algorithm to accomplish the task.
+Example:
+Value look ups when you know the key (objects) or the index (arrays) always take one step, and are thus constant time.
+
+**O(log n) **
+Time complexity: Logarithmic time
+given an input of size n, the number of steps it takes to accomplish the task are decreased by some factor with each step.
+Example:
+If you know which side of the array to look on for an item, you save time by cutting out the other half. You can decrease the amount of work you have to do with each step.
+
+**O(n)**
+Time complexity: Linear time
 O of n is a linear process
-O(n)
+Given an input of size n, the number of of steps required is directly related (1 to 1).
+Example:
+You have to look at every item in the array or list to accomplish the task. Single for loops are almost always linear time. Also array methods like indexOf are also linear time. You’re just abstracted away from the looping process.
+
+**O(n²)** 
+Time complexity:  Quadratic Time
+Given an input of size n, the number of steps it takes to accomplish a task is square of n.
+Example:
+Nested for loops are quadratic time, because you’re running a linear operation within another linear operation (or n\*n = n²).
+
+**O(C^n) **
+Time complexity: Exponential Time
+Given an input of size n, the number of steps it takes to accomplish a task is a constant to the n power (pretty large number).
+Example:
+Exponential time is usually for situations where you don’t know that much, and you have to try every possible combination or permutation.
+The number of steps it takes to accomplish a task is a constant to the n power.
+Trying to find every combination of letters for a password of length n.
+
+Time complexity isn't the only thing that you should consider when evaluating a solution to your problem. You should also consider how easy it is to read your code and how much memory each of your potential solutions consumes.
 
 ---
 
