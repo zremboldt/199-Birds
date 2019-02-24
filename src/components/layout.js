@@ -1,12 +1,14 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from '@emotion/styled';
 import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
+import { Spring } from 'react-spring';
 import Header from './header';
 import Archive from './archive';
 import './layout.css';
 
-const Layout = ({ children }) => (
+const Layout = ({ children, location }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -27,7 +29,19 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <Img fluid={data.file.childImageSharp.fluid} />
+        <Spring
+          from={{ height: location.pathname === '/' ? 100 : 200 }}
+          to={{ height: location.pathname === '/' ? 200 : 100 }}
+        >
+          {styles => (
+            <div style={{ overflow: 'hidden', ...styles }}>
+              <Img fluid={data.file.childImageSharp.fluid} />
+            </div>
+          )}
+        </Spring>
+        {/* {location.pathname === '/' && (
+          <Img fluid={data.file.childImageSharp.fluid} />
+        )} */}
         <MainLayout>
           <div>{children}</div>
           <Archive />
@@ -41,6 +55,14 @@ const Layout = ({ children }) => (
     )}
   />
 );
+
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
+};
+
+Layout.defaultProps = {
+  location: {},
+};
 
 export default Layout;
 
