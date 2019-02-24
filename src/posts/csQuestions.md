@@ -26,16 +26,6 @@ so you could get its idea literally that it's used to order something to compare
 
 "Big O' achieves the above two with standardized Notations.
 
-There are seven most used notations
-
-1. O(1), means your computer gets a task done with 1 step, it's excellent, Ordered No.1
-2. O(logN), means your computer complete a task with logN steps, its good, Ordered No.2
-3. O(N), finish a task with N steps, its fair, Order No.3
-4. O(NlogN), ends a task with O(NlogN) steps, it's not good, Order No.4
-5. O(N^2), get a task done with N^2 steps, it's bad, Order No.5
-6. O(2^N), get a task done with 2^N steps, it's horrible, Order No.6
-7. O(N!), get a task done with N! steps, it's beyond horrible, Order No.7
-
 ![alt text](https://i.stack.imgur.com/6zHEt.png)
 
 Summary
