@@ -38,18 +38,37 @@ date: '2019-01-19'
   - How can you achieve immutability in your own code?
 - Explain the difference between synchronous and asynchronous functions.
 - What is event loop?
-  - What is the difference between call stack and task queue?
-- What are the differences between variables created using `let`, `var` or `const`?
-- What are the differences between ES6 class and ES5 function constructors?
-- Can you offer a use case for the new arrow `=>` function syntax? How does this new syntax differ from other functions?
-- What advantage is there for using the arrow syntax for a method in a constructor?
-- What is the definition of a higher-order function?
-- Can you give an example for destructuring an object or an array?
-- Can you give an example of generating a string with ES6 Template Literals?
-- Can you give an example of a curry function and why this syntax offers an advantage?
-- What are the benefits of using `spread syntax` and how is it different from `rest syntax`?
-- How can you share code between files?
-- Why you might want to create static class members?
+
+  > Great video by Philip Roberts: https://www.youtube.com/watch?v=8aGhZQkoFbQ  
+  > In JS, code that would be "blocking" (setTimeout for example) lands on the browser's stack but is then passed off to the browser's webapis where the setTimeout waits out its duration until it's ready to be executed. When it's ready it doesn't just throw it back onto the call stack and disrupt whatever else is running, it gets passed to the task queue to wait.  
+  > Now the event loop steps in...  
+  > The event loop's job is to look at the stack and to look at the task queue. If the stack is empty, it takes the first thing on the task queue and pushes it onto the stack to be run.
+
+  > An XHR request (request to an outside source) falls into the "blocking" category as well and is handled the same way.
+
+  > setTimeout 0 doesn't run the code immediately, it runs it next...ish
+
+  > There's also a Render Queue that tries to run renders at 60 fps but can't run while there are tasks in the Call Stack. So it waits and runs renders whenever there's an opening. If you have blocking code on the stack it will block and cause problems with render jank.
+
+  > Takeaway  
+  > Don't put slow code on the stack. Run it async, in other words pass it off to webapis while it does its slow thing.
+
+* What is the difference between call stack and task queue?
+
+  > The call stack is a data structure that records where in the program we currently are.
+  > So if we step into a function, we push something onto the stack, if we return from a function, we pop off the top of the stack.
+
+* What are the differences between variables created using `let`, `var` or `const`?
+* What are the differences between ES6 class and ES5 function constructors?
+* Can you offer a use case for the new arrow `=>` function syntax? How does this new syntax differ from other functions?
+* What advantage is there for using the arrow syntax for a method in a constructor?
+* What is the definition of a higher-order function?
+* Can you give an example for destructuring an object or an array?
+* Can you give an example of generating a string with ES6 Template Literals?
+* Can you give an example of a curry function and why this syntax offers an advantage?
+* What are the benefits of using `spread syntax` and how is it different from `rest syntax`?
+* How can you share code between files?
+* Why you might want to create static class members?
 
 ## Coding questions
 
