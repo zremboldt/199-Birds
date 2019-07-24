@@ -5,6 +5,7 @@ const BtnBiome = ({ handleClick, birdsSelected, biome }) => {
     <button
       onClick={handleClick}
       className={birdsSelected === biome ? "btnSelected" : ""}
+      aria-label={biome}
     >
       {biome}
     </button>

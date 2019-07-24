@@ -21,9 +21,9 @@ const Card = ({ name, favorite, ...vidProps }) => {
     <>
       <div className="card" onClick={toggleModal}>
         {favorite && (
-          <button className="btnFavorite">
+          <div className="btnFavorite">
             <Heart />
-          </button>
+          </div>
         )}
         <div className="cardImg">
           <Image imgName={formatImgName()} />

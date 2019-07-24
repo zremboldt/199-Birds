@@ -3,7 +3,6 @@ import React from "react";
 const ImgLeaves = () => {
   return (
     <svg
-      id="a9708768-4912-4971-a16a-39b9e8c55bae"
       data-name="Decorative Leaves"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 1200 190"

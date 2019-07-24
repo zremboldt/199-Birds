@@ -73,6 +73,7 @@ const IndexPage = () => {
         type="text"
         placeholder="Search all birds"
         onChange={e => setSearchQuery(e.target.value)}
+        aria-label="Search all birds"
       />
 
       <nav>
