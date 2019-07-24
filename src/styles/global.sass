@@ -1,0 +1,149 @@
+// *********
+// Variables
+// *********
+
+// Colors
+$primary: hsla(216, 97%, 60%, 1)
+$offWhite: hsl(42, 100%, 95%)
+$border: hsla(180, 13%, 30%, .2)
+$green: #c8da81
+$coral: #f25268
+$dark:  hsl(180, 13%, 28%)
+$g1: #1ba4f7
+$g2: #4641ff
+
+
+// Gradients
+$gradient: linear-gradient(-135deg, $g1 0%, $g2 100%)
+
+
+// Shadows
+$shadowCard: 0px 8px 26px -6px hsla(126, 85%, 27%, 0.35)
+$shadowHeaderText: 0px 3px 6px hsla(235, 100%, 31%, 0.3)
+
+
+// Easing
+$zease:       cubic-bezier(0.165, 0.84, 0.44, 1)
+$easeOutBack: cubic-bezier(0.175, 0.885, 0.32, 1.275)
+
+
+
+// *************
+// Initial Setup
+// *************
+
+html
+  box-sizing: border-box
+  font-size: 10px // Globally sets rems to increments of 10px. 1rem = 10px.
+  margin: 0
+
+*, *:before, *:after
+  box-sizing: inherit
+
+body
+  position: relative
+  margin: 0
+  padding: 0
+  background-color: $offWhite
+  overflow-x: hidden
+
+.pageWrap
+  display: flex
+  flex-direction: column
+  align-items: center
+  min-height: 100vh
+
+button
+  padding: 0
+  outline: none
+
+ul
+  list-style: none
+  margin: 0
+  padding: 0
+
+ol
+  margin: 0
+  padding-left: 2rem
+
+a
+  text-decoration: none
+  color: $primary
+  cursor: pointer
+  border-bottom: 2px solid white
+  transition: 0.1s ease-in-out
+
+  &:hover
+    border-bottom: 2px solid $primary
+
+
+// **********
+// Typography
+// **********
+
+h1, h2, h3, h4, h5, h6, p, span, li, button, input
+  margin: 0
+  color: $dark
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+h1, h2, h3, h4, h5, h6
+  font-family: 'Montserrat', Helvetica Neue, arial, sans-serif
+  // font-weight: normal
+
+p, span, li, button, input
+  font-family: 'Montserrat', Helvetica Neue, arial, sans-serif
+
+.caption
+  color: lighten($dark, 20%)
+  font-size: 15px
+  line-height: 24px
+
+.marBot2
+  margin-bottom: 1.8rem
+.marBot4
+  margin-bottom: 4rem
+
+.trackingPos
+  letter-spacing: 0.15px
+.trackingNeg
+  letter-spacing: -0.05px
+
+// Modular type scale (below) taken from the Root design system specs.
+h1
+  font-size: 4.8rem
+  line-height: 6rem
+h2
+  font-size: 3.2rem
+  line-height: 3.6rem
+h3
+  font-size: 2rem
+  line-height: 2.2rem
+p, span, li, input
+  font-size: 1.8rem
+  line-height: 3rem
+.p1
+  font-size: 2rem
+  line-height: 3.2rem
+button
+  font-size: 1.8rem
+  line-height: 2.2rem
+
+@media screen and (max-width: 350px)
+  h1
+    font-size: 4rem
+    line-height: 5.4rem
+  h2
+    font-size: 2.8rem
+    line-height: 3.2rem
+  p, span, li, input
+    font-size: 1.6rem
+    line-height: 2.8rem
+  .p1
+    font-size: 1.8rem
+    line-height: 3rem
+  button
+    font-size: 1.6rem
+    line-height: 2rem
+
+

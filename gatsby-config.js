@@ -1,9 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `{devQuestions}`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    another: `Gotta restart the local server to add new data here.`,
+    title: `199 Birds`,
+    description: `Using this project to help me understand using images in Gatsby.`,
+    author: `@zremboldt`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -14,38 +13,23 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        path: `${__dirname}/src/posts`,
-        name: 'posts',
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        path: `${__dirname}/src/images`,
-        name: 'images',
-      },
-    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    { resolve: `gatsby-plugin-emotion` },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `199-birds`,
+        short_name: `199-birds`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#ff8e4d`,
+        theme_color: `#ff8e4d`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
-    'gatsby-transformer-remark',
+    `gatsby-plugin-sass`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.app/offline
-    // 'gatsby-plugin-offline',
+    // To learn more, visit: https://gatsby.dev/offline
+    // `gatsby-plugin-offline`,
   ],
 };
