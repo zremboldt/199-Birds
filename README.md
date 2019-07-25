@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ab85fd9c-4402-48d1-8fa8-0760dae3e185/deploy-status)](https://app.netlify.com/sites/199birds/deploys)
+
 ### About the app
 
 This web app is a personal project made for my family/kiddos to enjoy.

@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import IconClose from "../images/IconClose";
 
 const Modal = ({ toggleModal, videoId, vidStart = 0, vidStop }) => {
   useEffect(() => {
@@ -27,6 +28,13 @@ const Modal = ({ toggleModal, videoId, vidStart = 0, vidStop }) => {
   return (
     <div className="modal">
       <div className="bgModal" onClick={toggleModal}></div>
+      <button
+        className="btnClose"
+        onClick={toggleModal}
+        aria-label="close video player"
+      >
+        <IconClose />
+      </button>
       <div className="ctrVideo">
         <iframe
           className="video"
