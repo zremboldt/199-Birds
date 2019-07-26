@@ -987,8 +987,8 @@ export const birdData = [
   {
     name: "Indian Ring-Necked Parakeet",
     biome: "Pet birds",
-    videoId: "PtWoyu-TU8I",
-    vidStart: "60",
+    videoId: "BvbCPyQogho",
+    vidStart: "",
   },
   {
     name: "Yellow Collared Lovebird",
