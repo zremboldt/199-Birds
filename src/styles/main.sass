@@ -59,11 +59,42 @@ section
     border-radius: 5rem
     box-shadow: 0 3px 18px hsla(352, 100%, 74%, 0.2)
     color: $coral
-    pointer-events: none
 
     svg
       fill: $coral
       fill-opacity: 1
+
+    &:after
+      content: ''
+      position: absolute
+      right: 6rem
+      width: 1.5rem
+      height: 1.5rem
+      background-color: white
+      border-radius: 0px 3px 0px 15px
+      transform: rotate(45deg)
+
+    &:before
+      content: "This video's a fav!"
+      position: absolute
+      right: 6.6rem
+      white-space: nowrap
+      padding: 0.9rem 1.4rem
+      background-color: white
+      border-radius: .6rem
+      box-shadow: 0 3px 18px hsla(352, 100%, 74%, 0.2)
+      font-family: 'Montserrat', Helvetica Neue, arial, sans-serif
+      font-size: 1.5rem
+      text-align: center
+
+    &:before, 
+    &:after
+      opacity: 0
+      transition: opacity 0.3s $zease
+
+    &:hover:before, 
+    &:hover:after
+      opacity: 1
 
 
 
