@@ -20,18 +20,19 @@
   .btnClose
     position: fixed
     top: 2rem
-    right: 2rem
+    right: 0
     z-index: 22
-    width: 5rem
+    width: 7rem
     height: 5rem
     display: flex
-    justify-content: center
+    justify-content: left
     align-items: center
     background-color: hsla(0, 0%, 100%, 0.1)
-    border-radius: 10rem
+    border-radius: 10rem 0 0 10rem
     box-shadow: 0 3px 18px hsla(0, 0%, 0%, 0.2)
 
     svg
+      margin: 13px
       fill: white
 
   .ctrVideo
@@ -49,8 +50,3 @@
       height: 100%
 
 
-// Media Queries ↓
-@media (max-width: 1024px)
-  .modal
-    .btnClose
-      right: 4rem
