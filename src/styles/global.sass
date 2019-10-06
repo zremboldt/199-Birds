@@ -4,7 +4,9 @@
 
 // Colors
 $offWhite: hsl(42, 100%, 95%)
+$tan: hsl(42, 80%, 90%)
 $green: #c8da81
+$orange: hsl(22, 100%, 65%)
 $coral: #f25268
 $dark:  hsl(180, 13%, 28%)
 
@@ -54,11 +56,24 @@ ol
   padding-left: 2rem
 
 a
-  text-decoration: none
+  position: relative
+  color: $orange
   cursor: pointer
-  border-bottom: 2px solid white
-  transition: 0.1s ease-in-out
+  text-decoration: none
 
+  &:after
+    content: ''
+    width: 100%
+    height: 2px
+    position: absolute
+    bottom: 0
+    left: 0
+    background-color: $orange
+    border-radius: 4px
+    transition: 0.1s ease-in-out
+
+  &:hover:after
+    transform: translateY(2px)
 
 // **********
 // Typography
@@ -72,7 +87,7 @@ h1, h2, h3, h4, h5, h6, p, span, li, button, input
 
 h1, h2, h3, h4, h5, h6
   font-family: 'Montserrat', Helvetica Neue, arial, sans-serif
-  // font-weight: normal
+  font-weight: 900
 
 p, span, li, button, input
   font-family: 'Montserrat', Helvetica Neue, arial, sans-serif
@@ -92,13 +107,13 @@ p, span, li, button, input
 .trackingNeg
   letter-spacing: -0.05px
 
-// Modular type scale (below) taken from the Root design system specs.
+// Modular type scale
 h1
   font-size: 4.8rem
   line-height: 6rem
 h2
-  font-size: 3.2rem
-  line-height: 3.6rem
+  font-size: 4.4rem
+  line-height: 4.8rem
 h3
   font-size: 2rem
   line-height: 2.2rem
@@ -117,8 +132,8 @@ button
     font-size: 4rem
     line-height: 5.4rem
   h2
-    font-size: 2.8rem
-    line-height: 3.2rem
+    font-size: 3.4rem
+    line-height: 3.8rem
   p, span, li, input
     font-size: 1.6rem
     line-height: 2.8rem

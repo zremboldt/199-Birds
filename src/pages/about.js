@@ -8,11 +8,12 @@ const About = () => {
           <h2>About the app</h2>
           <p>
             This web app is a personal project made for my family/kiddos to
-            enjoy. Our three year old loves the Usborne 199 Birds book and the
-            other day we were looking up the birds on YouTube to see them in
-            action and hear what they sound like. I thought it'd be fun to make
-            an easier way to find the videos without worrying about ads or
-            reccomended videos popping up.
+            enjoy. Our three year old loves the{" "}
+            <a href="">Usborne 199 Birds book</a> and the other day we were
+            looking up the birds on YouTube to see them in action and hear what
+            they sound like. I thought it'd be fun to make an easier way to find
+            the videos without worrying about ads or reccomended videos popping
+            up.
           </p>
         </section>
 
@@ -51,9 +52,9 @@ const About = () => {
               finding the flamingo is as easy as typing "fl".
             </li>
             <li>
-              Adding a bird is as easy as adding an object to birdData.js. Just
-              give it a name and the YouTube video ID. You can also assign an
-              optional video start and end time.
+              Adding a bird is as easy as adding an object to a file called
+              birdData.js. Just give it a name and the YouTube video ID. You can
+              also assign an optional video start and end time.
             </li>
             <li>
               App is designed to work great on all device sizes from desktop to
