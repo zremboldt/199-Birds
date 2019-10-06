@@ -112,7 +112,7 @@ const IndexPage = () => {
           </picture>
         )}
 
-        <section>
+        <section className="ctrBirdGrid">
           <div className="grid">
             {displayBirds.map((bird, i) => (
               <Card {...bird} key={i} />
