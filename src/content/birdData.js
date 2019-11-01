@@ -368,6 +368,7 @@ export const birdData = [
     biome: "Australian birds",
     videoId: "Aaq0Ynd8mjY",
     vidStart: "125",
+    favorite: true,
   },
   {
     name: "Fruit Dove",
@@ -431,7 +432,6 @@ export const birdData = [
     name: "Ostrich",
     biome: "Savanna birds",
     videoId: "OBRppKPXKuU",
-    favorite: true,
   },
   {
     name: "Motmot",
