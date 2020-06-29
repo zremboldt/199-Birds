@@ -16,7 +16,7 @@ main
   width: 100%
   max-width: 1140px
   margin: -10rem 0 0
-  
+
 .card
   width: calc(33.33% - 30px)
   margin: 15px
@@ -87,25 +87,18 @@ main
       font-size: 1.5rem
       text-align: center
 
-    &:before, 
+    &:before,
     &:after
       opacity: 0
       transition: opacity 0.3s $zease
 
-    &:hover:before, 
+    &:hover:before,
     &:hover:after
       opacity: 1
-
-
-
-
-
 
 .noMatchMessage
   margin: 8rem 1rem
   text-align: center
-
-
 
 footer
   flex: 1
@@ -113,38 +106,21 @@ footer
   min-height: 8rem
   background-color: $green
 
-
-
 // Media Queries ↓
 @media (max-width: 900px)
   .grid
     margin: -6rem 0 0
 
   .card
-    width: calc(50% - 30px)
+    width: calc(50% - 20px)
+    margin: 20px 10px 0
 
-@media (max-width: 560px)
+@media (max-width: 360px)
   .grid
     margin: -3rem 0 0
 
   .card
     width: calc(100% - 20px)
-    margin: 15px 10px
 
     &:hover
       transform: scale(0.97)
-    
-
-      
-
-
-
-
-
-
-
-
-
-
-
-  
