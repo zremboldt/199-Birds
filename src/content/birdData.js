@@ -760,6 +760,7 @@ export const birdData = [
     biome: "Rainforest birds",
     videoId: "AA2LkrR0_dw",
     vidStart: "",
+    favorite: true,
   },
 
   ///////////////////////////////////////////
